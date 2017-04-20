@@ -1,0 +1,16 @@
+<apex:page controller="TrialforceAutomation" showHeader="false">
+
+    <apex:form id="demoOrgDetails">
+        <apex:pageBlock >
+        <apex:pageMessages />
+            <apex:pageBlockButtons location="bottom">
+                <apex:commandButton value="Save" action="{!createTrialOrg}" disabled="{!disableSave}"/>
+            </apex:pageBlockButtons>
+            <apex:pageBlockSection columns="1" title="Digital Genius Demo Org Signup">
+                <apex:inputText value="{!firstName}" label="First Name" required="true"/>
+                <apex:inputText value="{!lastName}" label="Last Name" required="true"/>
+                <apex:inputText value="{!emailAddress}" label="Email Address" required="true"/>
+            </apex:pageBlockSection>
+        </apex:pageBlock>
+    </apex:form>
+</apex:page>
